@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #090022;
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* =============global Style============ */
+h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+.cont-dot {
+    display: flex;
+    margin:  80px 50px 0 50px;
+    position: absolute;
+    bottom: 30px;
+}
+.cont-dot .dot {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    background: rgb(219, 219, 219);
+}
+.dot.active {
+    background: rgb(255, 172, 64);
+}
+.main-box {
+    width: 400px;
+    height: 690px;
+    background: #fff;
+    box-shadow: 0px 7px 25px rgba(0,0,0,0.1);
+    margin: auto;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    /* z-index: 1; */
+}
+.frist-page {
+    display: block;
+}
+.secound-page {
+    display: none;
+}
+.third-page {
+    display: none;
+}
+.fourth-page {
+    display: none;
+}
+/* =============global Style============ */
+
+/* ================Main Section================ */
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+}
+.main .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    margin: 0px 30px 0 30px;
+}
+.main .head h1 {
+    font-size: 22px;
+    color: #5A4FF5;
+}
+.main .head img {
+    width: 40px;
+    cursor: pointer;
+}
+.main .head i {
+    font-size: 23px;
+    color: rgb(255, 147, 6);
+    cursor: pointer;
+}
+.main .body {
+    margin-top: 30px;
+}
+.main .body h1 {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 38px;
+    margin-left: 30px;
+    color: #ffff;
+}
+.main .body .box-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px;
+    grid-gap: 10px;
+}
+.main .body .box {
+    width: 150px;
+    height: 160px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.09);
+    border-radius: 20px;
+    padding: 20px;
+    transition: all 0.4s ease-in;
+    cursor: pointer;
+}
+.main .body .box.box-2 {
+    margin-top: 30px;
+}
+.main .body .box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 7px 25px rgba(0,0,0,0.07);
+} 
+.main .body .box p {
+    font-size: 12px;
+}
+.main .body .box h2 {
+    font-size: 16px;
+}
+.main .body .box .fa-gamepad {
+    display: inline;
+    font-size: 40px;
+    color: #1556FB;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.main .body .box .fa-user-friends {
+    display: inline;
+    font-size: 40px;
+    color: orange;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.main .body .box .fa-play {
+    display: inline;
+    font-size: 40px;
+    color: rgb(53, 190, 94);
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+/* ================Main Section================ */
+
+
+/* ================Home Section================ */
+.home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.home-body.active {
+    transform: translateX(-100%);
+    transition: all 0.4s ease;
+}
+.home img {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 300px;
+}
+.home i {
+    margin: 50px 0 0px 50px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #666;
+}
+.home h1 {
+    margin: 0 50px 0 50px;
+    font-size: 27px;
+    color: rgb(36, 60, 133);
+}
+.home p {
+    margin: 20px 50px 0 50px;
+    font-size: 15px;
+    color: #666;
+}
+.footer button {
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px 40px;
+    font-size: 18px;
+    background: rgb(255, 172, 64);
+    border: none;
+    color: #fff;
+    border-radius: 8px 0 30px 0;
+    transition: 0.4s;
+}
+.footer button:hover {
+    background: rgb(255, 147, 6);
+}
+/* ================Home Section================ */
+
+/* ================Rules Section================ */
+.rules-box {
+    height: 100%;
+    position: relative;
+}
+.rules-box i {
+    margin: 50px 0 0px 50px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #666;
+}
+.rules-box img {
+    display: flex;
+    width: 80%;
+    height: 250px;
+    margin: auto;
+}
+.rules-box ol {
+    padding: 20px 50px 0 50px;
+}
+.rules-box ol li {
+    margin-top: 10px;
+}
+/* ================Rules Section================ */
+
+/* ================Quiz Section================ */
+.question-box {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background-color: #4904b3;
+    background-image: linear-gradient(135deg, #1556FB 0%, #531FA9 100%);
+}
+.question-box .head {
+    padding-top: 30px;
+    margin: 0 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question-box .head i {
+    font-size: 20px;
+    color: #fff;
+}
+.question-box .head .time span {
+    font-size: 18px;
+    color: #fff;
+    margin-left: 10px;
+}
+.question-box .head button {
+    padding: 4px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.3s ease;
+}
+.question-box .head button:hover {
+    background: #fff;
+    color: #333;
+}
+.question-box .ques-num {
+    margin: 0 0 0 30px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+.question-box .progress-bar {
+    margin: 15px auto 10px auto;
+    width: 340px;
+    height: 4px;
+    background: rgb(230, 230, 230);
+    border-radius: 20px;
+}
+.question-box .progress-bar .bar {
+    width: 50px;
+    height: 4px;
+    background: rgb(255, 14, 14);
+    border-radius: 20px;
+}
+.question-box .body {
+    position: relative;
+    box-shadow: 0px 7px 25px rgba(0,0,0,0.1);
+    margin: auto;
+    width: 90%;
+    height: 480px;
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 30px 30px 80px 30px;
+}
+.question-box .body::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 20px;
+    left: 20px;
+    width: 90%;
+    border-radius: 20px;
+    height: 480px;
+    background: rgb(230, 230, 230);
+}
+.question-box .body::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 40px;
+    left: 40px;
+    width: 80%;
+    border-radius: 20px;
+    height: 480px;
+    background: rgba(224, 224, 224, 0.562);
+}
+.question-box .body h1 {
+    font-size: 20px;
+    color: #072980;
+}
+.question-box .body .option {
+    margin-top: 30px;
+}
+.question-box .body .option p {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 30px;
+    border-radius: 50px;
+    width: 100%;
+    color: #222;
+    height: 50px;
+    background: transparent;
+    border: 1px solid #999;
+    transition: all 0.3s ease;
+}
+.question-box .body .option p:hover {
+    background: #5A4FF5;
+    color: #fff;
+    border: 1px solid #5A4FF5;
+}
+.question-box .body .option p.wrong {
+    background: #f54f4f;
+    border: #f54f4f;
+    color: #fff;
+}
+.question-box .body .option p.correct {
+    background: #2dc408;
+    border: #2dc408;
+    color: #fff;
+}
+.question-box .body .option p.disabled {
+    pointer-events: none;
+}
+/* ================Question Section================ */

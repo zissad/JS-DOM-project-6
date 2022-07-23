@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Quiz app Design</title>
+</head>
+
+<body>
+    <!-- Main Section -->
+    <div class="main-box frist-page">
+        <div class="main">
+            <div class="head">
+                <i class="far fa-bars"></i>
+                <h1>QuizKit</h1>
+                <img src="./image/profile.png" alt="">
+            </div>
+            <div class="body">
+                <h1>Choose Your <br> Mode.</h1>
+                <div class="box-container">
+                    <div id="box" class="box">
+                        <i class="fas fa-gamepad"></i>
+                        <h2>Challenge</h2>
+                        <p>Play single.</p>
+                    </div>
+                    <div class="box box-2">
+                        <i class="fas fa-user-friends"></i>
+                        <h2>Tournament</h2>
+                        <p>Play With strangers.</p>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-play"></i>
+                        <h2>Play</h2>
+                        <p>Play with friend</p>
+                    </div>
+                    <div class="box box-2">
+                        <i class="fas fa-gamepad"></i>
+                        <h2>Lucky</h2>
+                        <p>Play sing and learn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Section -->
+    <!-- Home Section -->
+    <div class="main-box secound-page">
+        <div class="home">
+            <i id="se-back" class="fal fa-arrow-left"></i>
+            <div class="home-body">
+                <img src="./image/Travelers-rafiki.png" alt="" />
+                <h1>What's you dream Holiday Destenation?</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quis
+                    unde veniam voluptates Minus.
+                </p>
+            </div>
+            <div class="footer">
+                <div class="cont-dot">
+                    <div class="dot"></div>
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                </div>
+                <button class="home-btn">Start Quiz</button>
+            </div>
+        </div>
+    </div>
+    <!-- Home Section -->
+    
+    <!-- Rules Section -->
+    <div class="main-box third-page">
+        <div class="rules-box">
+            <div class="icon">
+                <i id="th-back" class="fal fa-arrow-left"></i>
+            </div>
+            <img src="./image/Blank canvas-pana.png" alt="">
+            <ol>
+                <li>You will have 15 seconds for per each question.</li>
+                <li>You can't select any option once time goes off.</li>
+                <li>You can't exit from the Quiz while you're playing.</li>
+                <li>You'll get points on the base of your correct answer.</li>
+            </ol>
+            <div class="footer">
+                <div class="cont-dot">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot active"></div>
+
+                </div>
+                <button id="th-btn" class="home-btn">Start Quiz</button>
+            </div>
+        </div>
+    </div>
+    <!-- Rules Section -->
+
+    <!-- Question section -->
+    <div class="main-box fourth-page">
+        <div class="question-box">
+            <div class="head">
+                <div class="time">
+                    <span>01:30</span>
+                </div>
+                <button class="next">Next</button>
+            </div>
+            <div class="progress-bar">
+                <div class="bar">
+
+                </div>
+            </div>
+            <span class="ques-num">Question : 1/10</span>
+            <div class="body">
+                <h1 class="ques-head"></h1>
+                <div class="option">
+                    <p>As long as posable.</p>
+                    <p>A couple of weeks is nice.</p>
+                    <p>A week is long enough.</p>
+                    <p>Just for few days.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Question section -->
+    <script src="./js/htmlQuiz.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

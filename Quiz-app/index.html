@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assect/css/style.css" />
+    <title>Dynamic Quiz app</title>
+</head>
+
+<body>
+    <!-- Quiz Home Page -->
+    <div class="quiz-app">
+        <img src="./assect/img/undraw_questions_re_1fy7.svg" alt="certificate" />
+
+        <div class="txt">
+            <h2>Quiz app With fixed time</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo doloribus
+                amet optio, voluptas aliquam placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+        <button id="st_quiz">Start Quiz</button>
+    </div>
+    <!-- Quiz Home Page -->
+
+    <!-- Quiz Rules Page -->
+    <div class="rulesBox">
+        <div class="head">
+            <h3>Some Rules of the quiz</h3>
+        </div>
+        <span></span>
+        <img src="./assect/img/undraw_conference_re_2yld.svg" alt="">
+        <ol>
+            <li>You will have 15 seconds for per each question.</li>
+            <li>Once you have select your answer, it can't be undone.</li>
+            <li>You can't select any option once time goes off.</li>
+            <li>You can't exit from the Quiz while you're playing.</li>
+            <li>You'll get points on the base of your correct answer.</li>
+        </ol>
+        <button class="exit">Exit Quiz</button>
+        <button class="continue">Continue</button>
+    </div>
+
+    <!-- Quiz Rules Page -->
+
+    <!-- Question Page -->
+    <div class="questionBox">
+        <div class="head">
+            <h4>Start Exam</h4>
+            <div class="timer">
+                <p>Time of</p>
+                <span class="time">15</span>
+            </div>
+        </div>
+        <div class="hr">
+            <div class="timeline"></div>
+        </div>
+        <div class="question">
+            <h2>
+
+            </h2>
+            <div class="options">
+                <div class="option">
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="total_que">1 of 5 Question</p>
+            <button class="next-btn">Next Que</button>
+        </div>
+    </div>
+    <!-- Question Page -->
+
+    <!-- Result Page -->
+
+    <div class="resultBx">
+        <img src="./assect/img/undraw_well_done_i2wr.svg" alt="">
+        <h1>Your Have finish the Exam</h1>
+        <h3></h3>
+        <p></p>
+        <a href="./"><button class="back">Quit quiz</button></a>
+        <a href="./"><button class="retry">Retry</button></a>
+    </div>
+
+    <script src="./assect/js/app.js"></script>
+    <script src="./assect/js/htmlQuiz.js"></script>
+</body>
+</html>
